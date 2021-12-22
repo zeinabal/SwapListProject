@@ -1,13 +1,206 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar style*/
+.navbar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+  font-size: xx-large;
+}
+.navbar .links {
+  margin-left: auto;
+ 
+}
+.navbar a {
+  margin-left: 30px;
+  text-decoration: none;
+  padding: 1px; 
+  font-weight: 500;
+  font-size: larger;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.navbar button{
+  padding: 5px;
+  background-color: white;;
+  margin-left: 3px;
+  border: 0;
+  font-size: medium;
+}
+.navbar button:hover{
+  color: #f1356d;
+   
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+
+}
+
+/* item style*/
+.item-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.item-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.item-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.item-preview a{
+  text-decoration: none;
+}
+
+/* item-details */
+.item-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.item-details div {
+  margin: 20px 0;
+}
+.item-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+/* item-list */
+.item-list Button{
+  background:#fff ;
+  color: #050505;
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.item-list Button:hover{
+  color: #f1356d;
+
+}
+/* edit */
+.edit-des{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.edit h2{
+  font-size: 20px;
+  color: #f1356d;
+
+  text-align: center;
+}
+.edit-des input, .edit-des textarea, .edit-des select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.edit label {
+  text-align: left;
+  display: block;
+}
+
+.edit-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+/* create */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+/* search */
+.Search{
+  margin-left: 370px;
+}
+.Search button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.Search input[type=text]{
+  border: none;
+  border-bottom: 2px solid #f2f2f2;
+  transition: width 0.4s ease-in-out;
+ 
+}
+.but {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
 }
